@@ -51,6 +51,11 @@ def read_fields(path):
 
 
 def to_boolean(s):
+    '''
+    >>> to_boolean('Yes')
+    True
+
+    '''
     map = {
         'Yes': True,
         'No': False

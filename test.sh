@@ -12,13 +12,17 @@ start flake8
 flake8 || die 'Try: autopep8 --in-place --aggressive -r .'
 end flake8
 
-start src-doctests
+start doctests
 find src | grep '\.py$' | xargs python -m doctest
-end src-doctests
+end doctests
 
-start examples
-./test-examples.sh
-end examples
+start definitions
+CMD='src/tsv-to-yaml.py --definitions defininitions'
+$CMD > definitions.test.yaml
+diff --ignore-blank-lines definitions{,.test}.yaml \
+  || die "To refresh: $CMD > definitions.yaml"
+rm definitions.test.yaml
+end definitions
 
 start changelog
 if [ "$TRAVIS_BRANCH" != 'master' ]; then
