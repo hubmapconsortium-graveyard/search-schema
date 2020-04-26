@@ -24,11 +24,11 @@ def main():
         help='Definitions directory, containing TSVs')
 
     args = parser.parse_args()
-    definitions_path = Path(args.definitions)
+    path = Path(args.definitions)
 
     output = {}
-    fields_path = definitions_path / 'fields.tsv'
-    output['fields'] = read_fields(fields_path)
+    output['fields'] = read_fields(path / 'fields.tsv')
+    output['enums'] = read_enums(path / 'enums')
 
     print(dump_yaml(output))
     return 0
@@ -37,8 +37,7 @@ def main():
 def read_fields(path):
     fields = {}
     with open(path) as f:
-        rows = list(DictReader(f, dialect='excel-tab'))
-        for row in rows:
+        for row in DictReader(f, dialect='excel-tab'):
             fields[row['ES document attribute']] = {
                 'neo4j': row['Neo4j Attribute'],
                 'required': to_boolean(row['Required Attribute']),
@@ -59,6 +58,20 @@ def to_boolean(s):
     if s in map:
         return map[s]
     return s
+
+
+def read_enums(path):
+    enums = {}
+    for tsv_path in path.glob('*.tsv'):
+        name = tsv_path.stem
+        enums[name] = {}
+        with open(tsv_path) as f:
+            for row in DictReader(f, dialect='excel-tab'):
+                enums[name][row['Value']] = {
+                    # As dict for consistency.
+                    'description': row['Description']
+                }
+    return enums
 
 
 if __name__ == "__main__":
