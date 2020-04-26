@@ -26,16 +26,20 @@ def main():
     args = parser.parse_args()
     definitions_path = Path(args.definitions)
 
-    output = {
-        'fields': {},
-        'enums': {}
-    }
-
+    output = {}
     fields_path = definitions_path / 'fields.tsv'
-    with open(fields_path) as f:
+    output['fields'] = read_fields(fields_path)
+
+    print(dump_yaml(output))
+    return 0
+
+
+def read_fields(path):
+    fields = {}
+    with open(path) as f:
         rows = list(DictReader(f, dialect='excel-tab'))
         for row in rows:
-            output['fields'][row['ES document attribute']] = {
+            fields[row['ES document attribute']] = {
                 'neo4j': row['Neo4j Attribute'],
                 'required': to_boolean(row['Required Attribute']),
                 'description': row['Description'],
@@ -44,9 +48,7 @@ def main():
                     row['Entity types with attribute'].split(', ')
                 ]
             }
-
-    print(dump_yaml(output))
-    return 0
+    return fields
 
 
 def to_boolean(s):
