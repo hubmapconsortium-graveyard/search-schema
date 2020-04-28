@@ -17,7 +17,7 @@ find src | grep '\.py$' | xargs python -m doctest
 end doctests
 
 start definitions
-CMD='src/tsv-to-yaml.py --definitions defininitions'
+CMD='src/tsv-to-yaml.py --definitions definitions'
 $CMD > definitions.test.yaml
 diff --ignore-blank-lines definitions{,.test}.yaml \
   || die "To refresh: $CMD > definitions.yaml"
