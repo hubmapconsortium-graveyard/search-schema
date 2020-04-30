@@ -41,7 +41,7 @@ start yaml-to-schema
 
   diff --ignore-blank-lines $REAL_SCHEMAS $TEST_SCHEMAS \
     || die "To refresh: $CMD $REAL_SCHEMAS"
-  rm $TEST_SCHEMAS
+  rm -rf $TEST_SCHEMAS
 end yaml-to-schema
 
 start changelog
