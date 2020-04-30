@@ -44,6 +44,13 @@ start yaml-to-schema
   rm -rf $TEST_SCHEMAS
 end yaml-to-schema
 
+start examples
+  for EXAMPLE in examples/*; do
+    TYPE=`basename $EXAMPLE .json`
+    src/validate.py --document $EXAMPLE --schema data/schemas/$TYPE.schema.yaml
+  done
+end examples
+
 start changelog
   if [ "$TRAVIS_BRANCH" != 'master' ]; then
     diff CHANGELOG.md <(curl -s https://raw.githubusercontent.com/hubmapconsortium/search-schema/master/CHANGELOG.md) \
