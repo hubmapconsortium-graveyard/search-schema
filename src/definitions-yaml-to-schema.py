@@ -3,6 +3,7 @@
 import argparse
 from yaml import dump as dump_yaml, safe_load as load_yaml
 from pathlib import Path
+import sys
 
 
 def _dir_path(string):
@@ -24,11 +25,30 @@ def main():
         help='Output directory for JSON Schema')
 
     args = parser.parse_args()
-    definitions = load_yaml(Path(args.definitions).read())
-    output = definitions
+    definitions = load_yaml(args.definitions.read())
 
-    schemas_dir_path = args.schemas
-    (schemas_dir_path / 'donor.schema.yaml').write(dump_yaml(output))
-    (schemas_dir_path / 'sample.schema.yaml').write(dump_yaml(output))
-    (schemas_dir_path / 'dataset.schema.yaml').write(dump_yaml(output))
+    for entity_type in ['donor', 'sample', 'dataset']:
+        path = args.schemas / f'{entity_type}.schema.yaml'
+        path.write_text(dump_yaml(make_schema(entity_type, definitions)))
+
     return 0
+
+
+def make_schema(entity_type, definitions):
+    fields = {
+        k: {
+            'description': v['description']
+            # 'required': v['required']
+        }
+        for k, v in definitions['fields'].items()
+        if entity_type in v['entity_types']
+    }
+    return {
+        'type': 'object',
+        'properties': fields
+    }
+
+
+if __name__ == "__main__":
+    exit_status = main()
+    sys.exit(exit_status)
