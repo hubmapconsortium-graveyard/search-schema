@@ -241,6 +241,30 @@ enums:
     wgs:
       description: Whole Genome Sequencing
 fields:
+  access_group:
+    description: 'TODO: Confirmation from Bill'
+    entity_types:
+    - donor
+    - sample
+    - dataset
+    neo4j: ''
+    required: true
+  ancestor_ids:
+    description: 'TODO: Confirmation from Bill'
+    entity_types:
+    - donor
+    - sample
+    - dataset
+    neo4j: ''
+    required: true
+  ancestors:
+    description: 'TODO: Confirmation from Bill'
+    entity_types:
+    - donor
+    - sample
+    - dataset
+    neo4j: ''
+    required: true
   contains_human_genetic_sequences:
     description: true if the data contains human gene sequence information, false
       otherwise
@@ -287,6 +311,22 @@ fields:
     - dataset
     neo4j: Metadata.data_types
     required: false
+  descendant_ids:
+    description: 'TODO: Confirmation from Bill'
+    entity_types:
+    - donor
+    - sample
+    - dataset
+    neo4j: ''
+    required: true
+  descendants:
+    description: 'TODO: Confirmation from Bill'
+    entity_types:
+    - donor
+    - sample
+    - dataset
+    neo4j: ''
+    required: true
   description:
     description: A description of the Entity, hand entered into the UI
     entity_types:
@@ -501,3 +541,4 @@ fields:
     - sample
     neo4j: Metadata.visit
     required: false
+

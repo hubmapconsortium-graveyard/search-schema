@@ -35,7 +35,7 @@ def main():
 
 
 def make_schema(entity_type, definitions):
-    fields = {
+    properties = {
         k: {
             'description': v['description']
             # 'required': v['required']
@@ -45,7 +45,8 @@ def make_schema(entity_type, definitions):
     }
     return {
         'type': 'object',
-        'properties': fields
+        'properties': properties,
+        'additionalProperties': False
     }
 
 

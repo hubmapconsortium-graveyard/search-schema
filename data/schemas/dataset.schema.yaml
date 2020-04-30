@@ -1,4 +1,11 @@
+additionalProperties: false
 properties:
+  access_group:
+    description: 'TODO: Confirmation from Bill'
+  ancestor_ids:
+    description: 'TODO: Confirmation from Bill'
+  ancestors:
+    description: 'TODO: Confirmation from Bill'
   contains_human_genetic_sequences:
     description: true if the data contains human gene sequence information, false
       otherwise
@@ -13,6 +20,10 @@ properties:
   data_types:
     description: 'An array of data/assay types contained in the Dataset.  Allowable
       values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+  descendant_ids:
+    description: 'TODO: Confirmation from Bill'
+  descendants:
+    description: 'TODO: Confirmation from Bill'
   description:
     description: A description of the Entity, hand entered into the UI
   display_doi:
