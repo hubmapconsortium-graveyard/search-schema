@@ -83,4 +83,19 @@ properties:
   visit:
     description: The clinical visit specifier of when a piece of tissue was procured.  This
       is hand entered via the Tissue Registration UI at the time of tissue registration.
+required:
+- access_group
+- ancestor_ids
+- ancestors
+- create_timestamp
+- created_by_user_displayname
+- created_by_user_email
+- descendant_ids
+- descendants
+- entity_type
+- group_name
+- group_uuid
+- last_modified_timestamp
+- specimen_type
+- uuid
 type: object

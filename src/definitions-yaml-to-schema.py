@@ -38,14 +38,21 @@ def make_schema(entity_type, definitions):
     properties = {
         k: {
             'description': v['description']
-            # 'required': v['required']
         }
         for k, v in definitions['fields'].items()
         if entity_type in v['entity_types']
     }
+    required = [
+        k
+        for k, v in definitions['fields'].items()
+        if entity_type in v['entity_types']
+        and v['required'] is True
+        # TODO: Some (true-y) strings are used for special cases.
+    ]
     return {
         'type': 'object',
         'properties': properties,
+        'required': required,
         'additionalProperties': False
     }
 

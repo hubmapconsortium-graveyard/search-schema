@@ -62,4 +62,19 @@ properties:
     description: 'The status of a Dataset. Allowable values listed here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
   uuid:
     description: The HuBMAP auto-generated UUID for the Entity
+required:
+- access_group
+- ancestor_ids
+- ancestors
+- contains_human_genetic_sequences
+- create_timestamp
+- created_by_user_displayname
+- created_by_user_email
+- descendant_ids
+- descendants
+- entity_type
+- group_name
+- group_uuid
+- last_modified_timestamp
+- uuid
 type: object

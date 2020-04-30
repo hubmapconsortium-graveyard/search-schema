@@ -61,4 +61,18 @@ properties:
       tissue procurement protocols and or data generation/derivation details.
   uuid:
     description: The HuBMAP auto-generated UUID for the Entity
+required:
+- access_group
+- ancestor_ids
+- ancestors
+- create_timestamp
+- created_by_user_displayname
+- created_by_user_email
+- descendant_ids
+- descendants
+- entity_type
+- group_name
+- group_uuid
+- last_modified_timestamp
+- uuid
 type: object
