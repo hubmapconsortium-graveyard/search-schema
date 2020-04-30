@@ -7,9 +7,7 @@
   "created_by_user_email": "allenj2@vanderbilt.edu",
   "descendant_ids": [
     "6243227b1acf7664c2bfe6704f516d66",
-    "4af6065981fca5067016bb97126d9216",
-    "e5f2cb399e7e8885134c1b1a2b6acc9a",
-    "9f975a83b38ca44e78679a59e344adf8"
+    "4af6065981fca5067016bb97126d9216"
   ],
   "descendants": [
     {
@@ -62,50 +60,6 @@
       ],
       "specimen_type": "fresh_frozen_tissue",
       "uuid": "4af6065981fca5067016bb97126d9216"
-    },
-    {
-      "create_timestamp": 1577393366418,
-      "created_by_user_displayname": "Jamie Allen",
-      "created_by_user_email": "allenj2@vanderbilt.edu",
-      "display_doi": "HBM474.BBPW.665",
-      "entity_type": "Sample",
-      "group_name": "Vanderbilt TMC",
-      "group_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
-      "hubmap_display_id": "VAN0013-LK-202",
-      "lab_tissue_id": "125",
-      "last_modified_timestamp": 1577393366439,
-      "portal_metadata_upload_files": [],
-      "portal_uploaded_protocol_files": [
-        {
-          "id": "protocol_1",
-          "protocol_doi": "dx.doi.org/10.17504/protocols.io.7gehjte",
-          "protocol_file": ""
-        }
-      ],
-      "specimen_type": "fresh_frozen_tissue",
-      "uuid": "e5f2cb399e7e8885134c1b1a2b6acc9a"
-    },
-    {
-      "create_timestamp": 1577393366401,
-      "created_by_user_displayname": "Jamie Allen",
-      "created_by_user_email": "allenj2@vanderbilt.edu",
-      "display_doi": "HBM482.RFBX.275",
-      "entity_type": "Sample",
-      "group_name": "Vanderbilt TMC",
-      "group_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
-      "hubmap_display_id": "VAN0013-LK-201",
-      "lab_tissue_id": "124",
-      "last_modified_timestamp": 1577393366439,
-      "portal_metadata_upload_files": [],
-      "portal_uploaded_protocol_files": [
-        {
-          "id": "protocol_1",
-          "protocol_doi": "dx.doi.org/10.17504/protocols.io.7gehjte",
-          "protocol_file": ""
-        }
-      ],
-      "specimen_type": "fresh_frozen_tissue",
-      "uuid": "9f975a83b38ca44e78679a59e344adf8"
     }
   ],
   "description": "Age 61, white female.",
