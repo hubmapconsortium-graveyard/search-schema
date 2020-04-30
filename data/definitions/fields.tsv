@@ -32,7 +32,7 @@ Metadata.status	status	Depends on entity type	Dataset	The status of a Dataset. A
 Metadata.visit	visit	No	Sample	The clinical visit specifier of when a piece of tissue was procured.  This is hand entered via the Tissue Registration UI at the time of tissue registration.
 	donor	Depends on entity type	Sample, Dataset	The ancestor Donor at the top of the provenance chain for the Entity.  This contains, in JSON, the full Entity information for the Donor.
 	origin_sample	Depends on entity type	Sample, Dataset	The tissue sample directly below Donor (should usually be an organ) at the top of the provenance chain for the Entity. This conntains, in JSON, the full Entity information for the Sample.
-	source_sample [ ]	Depends on entity type	Dataset	The tissue sample or samples that the data was directly derived from.  This contains, in JSON, the full Entity information for the Sample.
+	source_sample	Depends on entity type	Dataset	The tissue sample or samples that the data was directly derived from.  This contains, in JSON, the full Entity information for the Sample.
 	descendants	Yes	Donor, Sample, Dataset	TODO: Confirmation from Bill
 	descendant_ids	Yes	Donor, Sample, Dataset	TODO: Confirmation from Bill
 	ancestors	Yes	Donor, Sample, Dataset	TODO: Confirmation from Bill

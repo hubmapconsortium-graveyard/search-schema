@@ -55,7 +55,7 @@ properties:
     description: The tissue sample directly below Donor (should usually be an organ)
       at the top of the provenance chain for the Entity. This conntains, in JSON,
       the full Entity information for the Sample.
-  source_sample [ ]:
+  source_sample:
     description: The tissue sample or samples that the data was directly derived from.  This
       contains, in JSON, the full Entity information for the Sample.
   status:

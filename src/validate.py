@@ -30,10 +30,11 @@ def main():
     schema = load_yaml(args.schema.read())
     errors = validate(document, schema)
     if errors:
-        details = [f'Error: {e.message}' for e in errors]
+        print(f'Errors in {args.document.name} with {args.schema.name}:')
+        details = [f'- {e.message}' for e in errors]
         print('\n'.join(details))
         return 1
-    print(f'No errors in {args.document.name} with {args.schema.name}!')
+    print(f'No errors in {args.document.name} with {args.schema.name}.')
     return 0
 
 

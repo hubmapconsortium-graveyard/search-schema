@@ -1,0 +1,167 @@
+{
+  "access_group": "Readonly",
+  "ancestor_ids": [
+    "c1f0cc0152231ce6276475b3ea800aab",
+    "36d34bbfc026545aeac0c5acd47f3f91",
+    "a3ab4491d04dff03fdd2cee5a2df70b3"
+  ],
+  "ancestors": [
+    {
+      "create_timestamp": 1576876531650,
+      "created_by_user_displayname": "Yiing Lin",
+      "created_by_user_email": "liny@wustl.edu",
+      "description": "heart, free wall of left ventricle",
+      "display_doi": "HBM724.ZQKX.379",
+      "entity_type": "Sample",
+      "group_name": "California Institute of Technology TMC",
+      "group_uuid": "308f5ffc-ed43-11e8-b56a-0e8017bdda58",
+      "hubmap_display_id": "CALT0001-HT-2",
+      "lab_tissue_sample_id": "W101 heart, LV",
+      "last_modified_timestamp": 1576876531656,
+      "portal_metadata_upload_files": [],
+      "portal_uploaded_image_files": [],
+      "portal_uploaded_protocol_files": [
+        {
+          "protocol_doi": "",
+          "protocol_file": "/hive/hubmap/lz/tissue-reg-data/def5fd76-ed43-11e8-b56a-0e8017bdda58/018792bcfc178ae285dca044d2b97239/hubmap_protocol_tissue_collection.pdf"
+        }
+      ],
+      "specimen_type": "organ_piece",
+      "uuid": "c1f0cc0152231ce6276475b3ea800aab"
+    },
+    {
+      "create_timestamp": 1571148413977,
+      "created_by_user_displayname": "Yiing Lin",
+      "created_by_user_email": "liny@wustl.edu",
+      "description": "heart",
+      "display_doi": "HBM:523-CRVZ-983",
+      "entity_type": "Sample",
+      "group_name": "California Institute of Technology TMC",
+      "group_uuid": "308f5ffc-ed43-11e8-b56a-0e8017bdda58",
+      "hubmap_display_id": "CALT0001-HT",
+      "lab_tissue_sample_id": "W101 heart",
+      "last_modified_timestamp": 1582925838980,
+      "organ": "HT",
+      "organ_other": "",
+      "portal_metadata_upload_files": [
+        {
+          "description": "",
+          "filepath": "/hive/hubmap/lz/tissue-reg-data/308f5ffc-ed43-11e8-b56a-0e8017bdda58/36d34bbfc026545aeac0c5acd47f3f91/W101_B002_histologic_review.xlsx"
+        }
+      ],
+      "portal_uploaded_image_files": [],
+      "portal_uploaded_protocol_files": [
+        {
+          "protocol_file": "/hive/hubmap/lz/tissue-reg-data/def5fd76-ed43-11e8-b56a-0e8017bdda58/9513fcfa45c1f939ab0eb0ae18266762/hubmap_protocol_tissue_collection.pdf",
+          "protocol_url": ""
+        }
+      ],
+      "specimen_type": "organ",
+      "uuid": "36d34bbfc026545aeac0c5acd47f3f91"
+    },
+    {
+      "create_timestamp": 1571148119489,
+      "created_by_user_displayname": "Yiing Lin",
+      "created_by_user_email": "liny@wustl.edu",
+      "display_doi": "HBM:528-WJLC-564",
+      "entity_type": "Donor",
+      "group_name": "California Institute of Technology TMC",
+      "group_uuid": "308f5ffc-ed43-11e8-b56a-0e8017bdda58",
+      "hubmap_display_id": "CALT0001",
+      "lab_donor_id": "W101/B002",
+      "lab_name": "W101/B002",
+      "last_modified_timestamp": 1577467891985,
+      "portal_metadata_upload_files": [
+        {
+          "description": "",
+          "filepath": "/hive/hubmap/lz/tissue-reg-data/308f5ffc-ed43-11e8-b56a-0e8017bdda58/a3ab4491d04dff03fdd2cee5a2df70b3/W101_redact.html"
+        }
+      ],
+      "portal_uploaded_image_files": [],
+      "uuid": "a3ab4491d04dff03fdd2cee5a2df70b3"
+    }
+  ],
+  "contains_human_genetic_sequences": "no",
+  "create_timestamp": 1584312481755,
+  "created_by_user_displayname": "Dana L Jackson",
+  "created_by_user_email": "danaj77@washington.edu",
+  "data_types": "['dt_scatacdeq']",
+  "descendant_ids": [],
+  "descendants": [],
+  "description": "Left ventricle ATAC-seq data\n8 sequences",
+  "display_doi": "HBM952.DHTN.758",
+  "donor": {
+    "create_timestamp": 1571148119489,
+    "created_by_user_displayname": "Yiing Lin",
+    "created_by_user_email": "liny@wustl.edu",
+    "display_doi": "HBM:528-WJLC-564",
+    "entity_type": "Donor",
+    "group_name": "California Institute of Technology TMC",
+    "group_uuid": "308f5ffc-ed43-11e8-b56a-0e8017bdda58",
+    "hubmap_display_id": "CALT0001",
+    "lab_donor_id": "W101/B002",
+    "lab_name": "W101/B002",
+    "last_modified_timestamp": 1577467891985,
+    "portal_metadata_upload_files": [
+      {
+        "description": "",
+        "filepath": "/hive/hubmap/lz/tissue-reg-data/308f5ffc-ed43-11e8-b56a-0e8017bdda58/a3ab4491d04dff03fdd2cee5a2df70b3/W101_redact.html"
+      }
+    ],
+    "portal_uploaded_image_files": [],
+    "uuid": "a3ab4491d04dff03fdd2cee5a2df70b3"
+  },
+  "entity_type": "Dataset",
+  "group_name": "hubmap-cit",
+  "group_uuid": "308f5ffc-ed43-11e8-b56a-0e8017bdda58",
+  "last_modified_timestamp": 1585154319357,
+  "origin_sample": {
+    "create_timestamp": 1571148594378,
+    "created_by_user_displayname": "Yiing Lin",
+    "created_by_user_email": "liny@wustl.edu",
+    "description": "spleen, central portion, peri-hilar",
+    "display_doi": "HBM:278-KVFF-836",
+    "entity_type": "Sample",
+    "group_name": "California Institute of Technology TMC",
+    "group_uuid": "308f5ffc-ed43-11e8-b56a-0e8017bdda58",
+    "hubmap_display_id": "CALT0001-SP",
+    "lab_tissue_sample_id": "W101 spleen, central",
+    "last_modified_timestamp": 1571148594392,
+    "organ": "SP",
+    "portal_uploaded_protocol_files": [
+      {
+        "protocol_file": "/hive/hubmap/lz/tissue-reg-data/def5fd76-ed43-11e8-b56a-0e8017bdda58/79c45e0a679d1ef5aaa2e4fc8395d5a3/hubmap_protocol_tissue_collection.pdf",
+        "protocol_url": ""
+      }
+    ],
+    "specimen_type": "organ",
+    "uuid": "d8204a70984bab4669121de9b9388e1d"
+  },
+  "source_sample": [
+    {
+      "create_timestamp": 1576876531650,
+      "created_by_user_displayname": "Yiing Lin",
+      "created_by_user_email": "liny@wustl.edu",
+      "description": "heart, free wall of left ventricle",
+      "display_doi": "HBM724.ZQKX.379",
+      "entity_type": "Sample",
+      "group_name": "California Institute of Technology TMC",
+      "group_uuid": "308f5ffc-ed43-11e8-b56a-0e8017bdda58",
+      "hubmap_display_id": "CALT0001-HT-2",
+      "lab_tissue_sample_id": "W101 heart, LV",
+      "last_modified_timestamp": 1576876531656,
+      "portal_metadata_upload_files": [],
+      "portal_uploaded_image_files": [],
+      "portal_uploaded_protocol_files": [
+        {
+          "protocol_doi": "",
+          "protocol_file": "/hive/hubmap/lz/tissue-reg-data/def5fd76-ed43-11e8-b56a-0e8017bdda58/018792bcfc178ae285dca044d2b97239/hubmap_protocol_tissue_collection.pdf"
+        }
+      ],
+      "specimen_type": "organ_piece",
+      "uuid": "c1f0cc0152231ce6276475b3ea800aab"
+    }
+  ],
+  "status": "New",
+  "uuid": "7e4c58d746cdd5b36503a12c38974b0a"
+}

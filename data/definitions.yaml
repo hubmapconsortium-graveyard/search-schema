@@ -499,7 +499,7 @@ fields:
     - sample
     neo4j: Metadata.rui_location
     required: false
-  source_sample [ ]:
+  source_sample:
     description: The tissue sample or samples that the data was directly derived from.  This
       contains, in JSON, the full Entity information for the Sample.
     entity_types:
