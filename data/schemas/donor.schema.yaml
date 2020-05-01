@@ -1,4 +1,11 @@
+additionalProperties: false
 properties:
+  access_group:
+    description: TODO
+  ancestor_ids:
+    description: TODO
+  ancestors:
+    description: TODO
   create_timestamp:
     description: The data/time when the entity was created
   created_by_user_displayname:
@@ -7,6 +14,10 @@ properties:
     description: The email address of the person who registerd/created the Entity.
   creation_action:
     description: The action that created this this Entity
+  descendant_ids:
+    description: TODO
+  descendants:
+    description: TODO
   description:
     description: A description of the Entity, hand entered into the UI
   display_doi:
@@ -14,7 +25,11 @@ properties:
       the UUID for the Entity.  This ID can be used when registering an object with
       the DOI System.
   entity_type:
-    description: 'The entity type. Allowable values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: The entity type.
+    enum:
+    - Dataset
+    - Donor
+    - Sample
   group_name:
     description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
   group_uuid:
@@ -50,4 +65,18 @@ properties:
       tissue procurement protocols and or data generation/derivation details.
   uuid:
     description: The HuBMAP auto-generated UUID for the Entity
+required:
+- create_timestamp
+- created_by_user_displayname
+- created_by_user_email
+- entity_type
+- group_name
+- group_uuid
+- last_modified_timestamp
+- uuid
+- access_group
+- ancestor_ids
+- ancestors
+- descendant_ids
+- descendants
 type: object

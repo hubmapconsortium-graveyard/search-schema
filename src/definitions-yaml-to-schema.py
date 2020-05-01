@@ -34,18 +34,57 @@ def main():
     return 0
 
 
-def make_schema(entity_type, definitions):
-    fields = {
+def make_schema(entity_type, definitions, top_level=True):
+    properties = {
         k: {
-            'description': v['description']
-            # 'required': v['required']
+            'description': v['description'],
+            **optional_enum(v['enum'], definitions)
         }
         for k, v in definitions['fields'].items()
         if entity_type in v['entity_types']
     }
-    return {
+    required = [
+        k
+        for k, v in definitions['fields'].items()
+        if entity_type in v['entity_types']
+        and v['required'] is True
+        # TODO: Some (true-y) strings are used for special cases.
+    ]
+    if top_level:
+        for extra in [
+                'access_group',
+                'ancestor_ids', 'ancestors',
+                'descendant_ids', 'descendants']:
+            properties[extra] = {'description': 'TODO'}
+            required.append(extra)
+        if 'donor' in properties:
+            properties['donor'] = make_schema(
+                'donor', definitions, top_level=False)
+        if 'origin_sample' in properties:
+            properties['origin_sample'] = make_schema(
+                'sample', definitions, top_level=False)
+        if 'source_sample' in properties:
+            properties['source_sample'] = {
+                # TODO: Is this correct?
+                # I was expecting just an object.
+                'type': 'array',
+                'items': make_schema(
+                    'sample', definitions, top_level=False)
+            }
+    schema = {
         'type': 'object',
-        'properties': fields
+        'properties': properties,
+        'required': required,
+        'additionalProperties': False
+    }
+    return schema
+
+
+def optional_enum(enum_name, definitions):
+    if not enum_name:
+        return {}
+    return {
+        'enum': list(definitions['enums'][enum_name].keys())
     }
 
 
