@@ -26,6 +26,10 @@ properties:
       the DOI System.
   entity_type:
     description: The entity type.
+    enum:
+    - Dataset
+    - Donor
+    - Sample
   group_name:
     description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
   group_uuid:

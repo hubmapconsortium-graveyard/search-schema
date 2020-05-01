@@ -37,7 +37,8 @@ def main():
 def make_schema(entity_type, definitions, top_level=True):
     properties = {
         k: {
-            'description': v['description']
+            'description': v['description'],
+            **optional_enum(v['enum'], definitions)
         }
         for k, v in definitions['fields'].items()
         if entity_type in v['entity_types']
@@ -77,6 +78,14 @@ def make_schema(entity_type, definitions, top_level=True):
         'additionalProperties': False
     }
     return schema
+
+
+def optional_enum(enum_name, definitions):
+    if not enum_name:
+        return {}
+    return {
+        'enum': list(definitions['enums'][enum_name].keys())
+    }
 
 
 if __name__ == "__main__":

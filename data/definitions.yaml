@@ -278,7 +278,7 @@ fields:
     - donor
     - sample
     - dataset
-    enum: activity_types
+    enum: null
     required: false
   data_types:
     description: 'TODO: An array of data/assay types contained in the Dataset.  Allowable

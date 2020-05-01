@@ -1,5 +1,5 @@
 Neo4j Attribute	ES document attribute	Required Attribute	Entity types with attribute	Enumeration	Description
-Activity.activitytype	creation_action	No	Donor, Sample, Dataset	activity_types	The action that created this this Entity
+Activity.activitytype	creation_action	No	Donor, Sample, Dataset		The action that created this this Entity
 Entity.display_doi	display_doi	No	Donor, Sample, Dataset		HuBMAP id generated at the same time as and associated directly with the UUID for the Entity.  This ID can be used when registering an object with the DOI System.
 Entity.entitytype	entity_type	Yes	Donor, Sample, Dataset	entity_types	The entity type.
 Entity.hubmap_identifier	hubmap_display_id	No	Donor, Sample		HuBMAP id used internal to the Consortium, generated at the same time as and associated directly with the UUID for the Entity.  The id is built on the the id from the parent object.  Format explained here: https://docs.google.com/document/d/1DjHgmqWF1VA5-3mfzLFNfabbzmc8KLSG9xWx1DDLlzo/

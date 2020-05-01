@@ -43,6 +43,10 @@ properties:
           with the DOI System.
       entity_type:
         description: The entity type.
+        enum:
+        - Dataset
+        - Donor
+        - Sample
       group_name:
         description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
       group_uuid:
@@ -94,6 +98,10 @@ properties:
     type: object
   entity_type:
     description: The entity type.
+    enum:
+    - Dataset
+    - Donor
+    - Sample
   group_name:
     description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
   group_uuid:
@@ -115,6 +123,44 @@ properties:
   organ:
     description: 'The organ type when specimen_type == organ.  Allowable values here:
       https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    enum:
+    - BL
+    - BR
+    - HT
+    - LB
+    - LI
+    - LK
+    - LL
+    - LV
+    - LY01
+    - LY02
+    - LY03
+    - LY04
+    - LY05
+    - LY06
+    - LY07
+    - LY08
+    - LY09
+    - LY10
+    - LY11
+    - LY12
+    - LY13
+    - LY14
+    - LY15
+    - LY16
+    - LY17
+    - LY18
+    - LY19
+    - LY20
+    - OT
+    - RB
+    - RK
+    - RL
+    - SI
+    - SP
+    - TH
+    - TR
+    - UR
   organ_other:
     description: If organ type == other, the organ name is specified in this field
   origin_sample:
@@ -139,6 +185,10 @@ properties:
           Entity.  This contains, in JSON, the full Entity information for the Donor.
       entity_type:
         description: The entity type.
+        enum:
+        - Dataset
+        - Donor
+        - Sample
       group_name:
         description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
       group_uuid:
@@ -163,6 +213,44 @@ properties:
       organ:
         description: 'The organ type when specimen_type == organ.  Allowable values
           here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+        enum:
+        - BL
+        - BR
+        - HT
+        - LB
+        - LI
+        - LK
+        - LL
+        - LV
+        - LY01
+        - LY02
+        - LY03
+        - LY04
+        - LY05
+        - LY06
+        - LY07
+        - LY08
+        - LY09
+        - LY10
+        - LY11
+        - LY12
+        - LY13
+        - LY14
+        - LY15
+        - LY16
+        - LY17
+        - LY18
+        - LY19
+        - LY20
+        - OT
+        - RB
+        - RK
+        - RL
+        - SI
+        - SP
+        - TH
+        - TR
+        - UR
       organ_other:
         description: If organ type == other, the organ name is specified in this field
       origin_sample:
@@ -189,6 +277,52 @@ properties:
       specimen_type:
         description: 'For Sample entities, the type of tissue specimen.  Allowable
           values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+        enum:
+        - atacseq
+        - biopsy
+        - blood
+        - cell_lysate
+        - clarity_hydrogel
+        - codex
+        - cryosections_curls_from_fresh_frozen_oct
+        - cryosections_curls_rnalater
+        - ffpe_block
+        - ffpe_slide
+        - fixed_frozen_section_slide
+        - fixed_tissue_piece
+        - flash_frozen_liquid_nitrogen
+        - formalin_fixed_oct_block
+        - fresh_frozen_oct_block
+        - fresh_frozen_section_slide
+        - fresh_frozen_tissue
+        - fresh_frozen_tissue_section
+        - fresh_tissue
+        - frozen_cell_pellet_buffy_coat
+        - gdna
+        - module
+        - nuclei
+        - nuclei_rnalater
+        - organ
+        - organ_piece
+        - other
+        - pbmc
+        - pfa_fixed_frozen_oct_block
+        - plasma
+        - protein
+        - ran_poly_a_enriched
+        - rna_total
+        - rnalater_treated_and_stored
+        - rnaseq
+        - scatacseq
+        - scrnaseq
+        - segment
+        - seqfish
+        - serum
+        - single_cell_cryopreserved
+        - snatacseq
+        - snrnaseq
+        - tissue_lysate
+        - wgs
       specimen_type_other:
         description: If specimen_type == other, the specimen type name is specified
           in this field
@@ -227,6 +361,52 @@ properties:
   specimen_type:
     description: 'For Sample entities, the type of tissue specimen.  Allowable values
       here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    enum:
+    - atacseq
+    - biopsy
+    - blood
+    - cell_lysate
+    - clarity_hydrogel
+    - codex
+    - cryosections_curls_from_fresh_frozen_oct
+    - cryosections_curls_rnalater
+    - ffpe_block
+    - ffpe_slide
+    - fixed_frozen_section_slide
+    - fixed_tissue_piece
+    - flash_frozen_liquid_nitrogen
+    - formalin_fixed_oct_block
+    - fresh_frozen_oct_block
+    - fresh_frozen_section_slide
+    - fresh_frozen_tissue
+    - fresh_frozen_tissue_section
+    - fresh_tissue
+    - frozen_cell_pellet_buffy_coat
+    - gdna
+    - module
+    - nuclei
+    - nuclei_rnalater
+    - organ
+    - organ_piece
+    - other
+    - pbmc
+    - pfa_fixed_frozen_oct_block
+    - plasma
+    - protein
+    - ran_poly_a_enriched
+    - rna_total
+    - rnalater_treated_and_stored
+    - rnaseq
+    - scatacseq
+    - scrnaseq
+    - segment
+    - seqfish
+    - serum
+    - single_cell_cryopreserved
+    - snatacseq
+    - snrnaseq
+    - tissue_lysate
+    - wgs
   specimen_type_other:
     description: If specimen_type == other, the specimen type name is specified in
       this field
