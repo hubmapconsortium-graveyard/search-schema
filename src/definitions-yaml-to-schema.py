@@ -54,13 +54,22 @@ def make_schema(entity_type, definitions, top_level=True):
                 'access_group',
                 'ancestor_ids', 'ancestors',
                 'descendant_ids', 'descendants']:
-            properties[extra] = {
-                'description': 'TODO'
-            }
+            properties[extra] = {'description': 'TODO'}
             required.append(extra)
         if 'donor' in properties:
             properties['donor'] = make_schema(
                 'donor', definitions, top_level=False)
+        if 'origin_sample' in properties:
+            properties['origin_sample'] = make_schema(
+                'sample', definitions, top_level=False)
+        if 'source_sample' in properties:
+            properties['source_sample'] = {
+                # TODO: Is this correct?
+                # I was expecting just an object.
+                'type': 'array',
+                'items': make_schema(
+                    'sample', definitions, top_level=False)
+            }
     schema = {
         'type': 'object',
         'properties': properties,
