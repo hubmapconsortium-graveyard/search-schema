@@ -34,7 +34,7 @@ def main():
     return 0
 
 
-def make_schema(entity_type, definitions):
+def make_schema(entity_type, definitions, top_level=True):
     properties = {
         k: {
             'description': v['description']
@@ -49,12 +49,25 @@ def make_schema(entity_type, definitions):
         and v['required'] is True
         # TODO: Some (true-y) strings are used for special cases.
     ]
-    return {
+    if top_level:
+        for extra in [
+                'access_group',
+                'ancestor_ids', 'ancestors',
+                'descendant_ids', 'descendants']:
+            properties[extra] = {
+                'description': 'TODO'
+            }
+            required.append(extra)
+        if 'donor' in properties:
+            properties['donor'] = make_schema(
+                'donor', definitions, top_level=False)
+    schema = {
         'type': 'object',
         'properties': properties,
         'required': required,
         'additionalProperties': False
     }
+    return schema
 
 
 if __name__ == "__main__":

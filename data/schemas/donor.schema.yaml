@@ -1,11 +1,11 @@
 additionalProperties: false
 properties:
   access_group:
-    description: 'TODO: Confirmation from Bill'
+    description: TODO
   ancestor_ids:
-    description: 'TODO: Confirmation from Bill'
+    description: TODO
   ancestors:
-    description: 'TODO: Confirmation from Bill'
+    description: TODO
   create_timestamp:
     description: The data/time when the entity was created
   created_by_user_displayname:
@@ -15,9 +15,9 @@ properties:
   creation_action:
     description: The action that created this this Entity
   descendant_ids:
-    description: 'TODO: Confirmation from Bill'
+    description: TODO
   descendants:
-    description: 'TODO: Confirmation from Bill'
+    description: TODO
   description:
     description: A description of the Entity, hand entered into the UI
   display_doi:
@@ -62,17 +62,17 @@ properties:
   uuid:
     description: The HuBMAP auto-generated UUID for the Entity
 required:
-- access_group
-- ancestor_ids
-- ancestors
 - create_timestamp
 - created_by_user_displayname
 - created_by_user_email
-- descendant_ids
-- descendants
 - entity_type
 - group_name
 - group_uuid
 - last_modified_timestamp
 - uuid
+- access_group
+- ancestor_ids
+- ancestors
+- descendant_ids
+- descendants
 type: object

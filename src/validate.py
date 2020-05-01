@@ -31,7 +31,9 @@ def main():
     errors = validate(document, schema)
     if errors:
         print(f'Errors in {args.document.name} with {args.schema.name}:')
-        details = [f'- {e.message}' for e in errors]
+        details = [
+            f'- {".".join(e.absolute_schema_path)}: {e.message}'
+            for e in errors]
         print('\n'.join(details))
         return 1
     print(f'No errors in {args.document.name} with {args.schema.name}.')
