@@ -246,7 +246,7 @@ fields:
       otherwise
     entity_types:
     - dataset
-    neo4j: Metadata.phi
+    enum: null
     required: true
   create_timestamp:
     description: The data/time when the entity was created
@@ -254,7 +254,7 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Entity.provenance_create_timestamp
+    enum: null
     required: true
   created_by_user_displayname:
     description: The name of the person who registered/created the Entity.
@@ -262,7 +262,7 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Metadata.provenance_user_displayname
+    enum: null
     required: true
   created_by_user_email:
     description: The email address of the person who registerd/created the Entity.
@@ -270,7 +270,7 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Metadata.provenance_user_email
+    enum: null
     required: true
   creation_action:
     description: The action that created this this Entity
@@ -278,14 +278,14 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Activity.activitytype
+    enum: activity_types
     required: false
   data_types:
     description: 'TODO: An array of data/assay types contained in the Dataset.  Allowable
       values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
     entity_types:
     - dataset
-    neo4j: Metadata.data_types
+    enum: null
     required: false
   description:
     description: A description of the Entity, hand entered into the UI
@@ -293,7 +293,7 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Metadata.description
+    enum: null
     required: false
   display_doi:
     description: HuBMAP id generated at the same time as and associated directly with
@@ -303,7 +303,7 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Entity.display_doi
+    enum: null
     required: false
   donor:
     description: The ancestor Donor at the top of the provenance chain for the Entity.  This
@@ -311,7 +311,7 @@ fields:
     entity_types:
     - sample
     - dataset
-    neo4j: ''
+    enum: null
     required: Depends on entity type
   entity_type:
     description: The entity type.
@@ -319,13 +319,13 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Entity.entitytype
+    enum: entity_types
     required: true
   files:
     description: An array of information about the files contained in the dataset.
     entity_types:
     - dataset
-    neo4j: Metadata.files
+    enum: null
     required: false
   group_name:
     description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
@@ -333,7 +333,7 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Metadata.provenance_group_name
+    enum: null
     required: true
   group_uuid:
     description: A UUID associated with the lab/TMC/TTD/RTI where the Entity was registered.
@@ -341,7 +341,7 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Metadata.provenance_group_uuid
+    enum: null
     required: true
   hubmap_display_id:
     description: 'HuBMAP id used internal to the Consortium, generated at the same
@@ -350,26 +350,26 @@ fields:
     entity_types:
     - donor
     - sample
-    neo4j: Entity.hubmap_identifier
+    enum: null
     required: false
   lab_donor_id:
     description: An donor id specific to the lab where the tissue was procured.
     entity_types:
     - donor
-    neo4j: Metadata.lab_donor_id
+    enum: null
     required: Depends on entity type
   lab_name:
     description: A lab specific label/name assigned to a donor by the lab during registration
       of the donor.
     entity_types:
     - donor
-    neo4j: Metadata.label
+    enum: null
     required: false
   lab_tissue_sample_id:
     description: An id specific to the lab where the tissue was processed.
     entity_types:
     - sample
-    neo4j: Metadata.lab_tissue_id
+    enum: null
     required: Depends on entity type
   last_modified_timestamp:
     description: The date/time when the entity was last updatedl
@@ -377,7 +377,7 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Metadata.provenance_modified_timestamp
+    enum: null
     required: true
   metadata:
     description: Metadata associated with the Entity. Formated in JSON. Donor metadata
@@ -389,26 +389,26 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Metadata.ingest_metadata
+    enum: null
     required: false
   name:
     description: The name of a dataset as entered into the Ingest UI
     entity_types:
     - dataset
-    neo4j: Metadata.name
+    enum: null
     required: Depends on entity type
   organ:
     description: 'The organ type when specimen_type == organ.  Allowable values here:
       https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
     entity_types:
     - sample
-    neo4j: Metadata.organ
+    enum: organ_types
     required: false
   organ_other:
     description: If organ type == other, the organ name is specified in this field
     entity_types:
     - sample
-    neo4j: Metadata.organ_other
+    enum: null
     required: false
   origin_sample:
     description: The tissue sample directly below Donor (should usually be an organ)
@@ -417,7 +417,7 @@ fields:
     entity_types:
     - sample
     - dataset
-    neo4j: ''
+    enum: null
     required: Depends on entity type
   portal_metadata_upload_files:
     description: An array of information about metadata files uploaded via the Tissue
@@ -425,7 +425,7 @@ fields:
     entity_types:
     - donor
     - sample
-    neo4j: Metadata.metadatas
+    enum: null
     required: false
   portal_uploaded_image_files:
     description: An array of information about image files uploaded during donor or
@@ -433,7 +433,7 @@ fields:
     entity_types:
     - donor
     - sample
-    neo4j: Metadata.image_file_metadata
+    enum: null
     required: false
   portal_uploaded_protocol_files:
     description: An array of information about files uploaded through the Donor/Tissue
@@ -441,7 +441,7 @@ fields:
     entity_types:
     - donor
     - sample
-    neo4j: Metadata.protocols
+    enum: null
     required: Just one of these two
   protocol_url:
     description: The url to the protocols.io instance describing donor selection criteria,
@@ -449,7 +449,7 @@ fields:
     entity_types:
     - donor
     - sample
-    neo4j: Metadata.protocol
+    enum: null
     required: Just one of these two
   rui_location:
     description: Location information of where the tissue sample came from in the
@@ -457,34 +457,34 @@ fields:
       the RUI tool.
     entity_types:
     - sample
-    neo4j: Metadata.rui_location
+    enum: null
     required: false
   source_sample:
     description: The tissue sample or samples that the data was directly derived from.  This
       contains, in JSON, the full Entity information for the Sample.
     entity_types:
     - dataset
-    neo4j: ''
+    enum: null
     required: Depends on entity type
   specimen_type:
     description: 'For Sample entities, the type of tissue specimen.  Allowable values
       here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
     entity_types:
     - sample
-    neo4j: Metadata.specimen_type
+    enum: tissue_sample_types
     required: true
   specimen_type_other:
     description: If specimen_type == other, the specimen type name is specified in
       this field
     entity_types:
     - sample
-    neo4j: Metadata.specimen_type_other
+    enum: null
     required: false
   status:
     description: 'The status of a Dataset. Allowable values listed here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
     entity_types:
     - dataset
-    neo4j: Metadata.status
+    enum: dataset_status_types
     required: Depends on entity type
   uuid:
     description: The HuBMAP auto-generated UUID for the Entity
@@ -492,13 +492,13 @@ fields:
     - donor
     - sample
     - dataset
-    neo4j: Entity.uuid
+    enum: null
     required: true
   visit:
     description: The clinical visit specifier of when a piece of tissue was procured.  This
       is hand entered via the Tissue Registration UI at the time of tissue registration.
     entity_types:
     - sample
-    neo4j: Metadata.visit
+    enum: null
     required: false
 

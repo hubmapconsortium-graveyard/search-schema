@@ -39,7 +39,7 @@ def read_fields(path):
     with open(path) as f:
         for row in DictReader(f, dialect='excel-tab'):
             fields[row['ES document attribute']] = {
-                'neo4j': row['Neo4j Attribute'],
+                'enum': row['Enumeration'] or None,
                 'required': to_boolean(row['Required Attribute']),
                 'description': row['Description'],
                 'entity_types': [
