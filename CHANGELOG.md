@@ -3,6 +3,4 @@
 ## v0.0.1 - in progress
 
 ### Added
-- Basic schemas.
-### Changed
--
+- Basic schema structures.

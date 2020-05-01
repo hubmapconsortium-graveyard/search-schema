@@ -18,7 +18,7 @@ properties:
   creation_action:
     description: The action that created this this Entity
   data_types:
-    description: 'An array of data/assay types contained in the Dataset.  Allowable
+    description: 'TODO: An array of data/assay types contained in the Dataset.  Allowable
       values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
   descendant_ids:
     description: TODO
@@ -48,7 +48,7 @@ properties:
           with the UUID for the Entity.  This ID can be used when registering an object
           with the DOI System.
       entity_type:
-        description: 'The entity type. Allowable values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+        description: The entity type.
       group_name:
         description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
       group_uuid:
@@ -99,7 +99,7 @@ properties:
     - uuid
     type: object
   entity_type:
-    description: 'The entity type. Allowable values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: The entity type.
   files:
     description: An array of information about the files contained in the dataset.
   group_name:
@@ -137,7 +137,7 @@ properties:
         description: The ancestor Donor at the top of the provenance chain for the
           Entity.  This contains, in JSON, the full Entity information for the Donor.
       entity_type:
-        description: 'The entity type. Allowable values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+        description: The entity type.
       group_name:
         description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
       group_uuid:
@@ -229,7 +229,7 @@ properties:
           description: The ancestor Donor at the top of the provenance chain for the
             Entity.  This contains, in JSON, the full Entity information for the Donor.
         entity_type:
-          description: 'The entity type. Allowable values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+          description: The entity type.
         group_name:
           description: The name of the lab/TMC/TTD/RTI where the Entity was registered.
         group_uuid:

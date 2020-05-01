@@ -281,7 +281,7 @@ fields:
     neo4j: Activity.activitytype
     required: false
   data_types:
-    description: 'An array of data/assay types contained in the Dataset.  Allowable
+    description: 'TODO: An array of data/assay types contained in the Dataset.  Allowable
       values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
     entity_types:
     - dataset
@@ -314,7 +314,7 @@ fields:
     neo4j: ''
     required: Depends on entity type
   entity_type:
-    description: 'The entity type. Allowable values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: The entity type.
     entity_types:
     - donor
     - sample
