@@ -30,3 +30,13 @@ pip install -r requirements-dev.txt
 The schemas are derived from TSVs in [`data/definitions`](data/definitions).
 If updates are needed, please make the changes there,
 and Chuck will regenerate the schemas.
+
+### Tag and release
+
+For now, we're just using git tags. When it's time to tag a version,
+checkout a new branch, and
+```
+./push.sh
+```
+Update the CHANGELOG, adding the date for the current tag,
+and stubbing the new "in progress" version, and make a PR from the branch.
