@@ -7,10 +7,15 @@ Their structure is described by [ingest-validation-tools](https://github.com/hub
 
 ## Usage
 
-### Validation
+JSON Schemas (as YAML) are in [`data/schemas`](data/schemas). This repo is incorporated as a git submodule in `portal-ui`.
 
-JSON Schemas (as YAML) are in [`data/schemas`](data/schemas).
-If you'll need packaging, or update notification, or a different format, let me know.
+## Maintenance Plan
+
+As we see see validation warnings in the Portal, we should update the schemas here to tolerate these variations,
+but for each tweak, we should also file an issue here to follow-up with PSC:
+- Is the variation something intentional, or a bug?
+- If intentional, what are the semantics?
+- Are there other variations we should be aware of?
 
 ## Development
 
