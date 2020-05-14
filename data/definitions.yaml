@@ -281,11 +281,10 @@ fields:
     enum: null
     required: false
   data_types:
-    description: 'TODO: An array of data/assay types contained in the Dataset.  Allowable
-      values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: 'TODO: An array of data/assay types contained in the Dataset.'
     entity_types:
     - dataset
-    enum: null
+    enum: assay_types
     required: false
   description:
     description: A description of the Entity, hand entered into the UI
@@ -398,8 +397,7 @@ fields:
     enum: null
     required: Depends on entity type
   organ:
-    description: 'The organ type when specimen_type == organ.  Allowable values here:
-      https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: The organ type when specimen_type == organ.
     entity_types:
     - sample
     enum: organ_types
@@ -467,8 +465,7 @@ fields:
     enum: null
     required: Depends on entity type
   specimen_type:
-    description: 'For Sample entities, the type of tissue specimen.  Allowable values
-      here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: For Sample entities, the type of tissue specimen.
     entity_types:
     - sample
     enum: tissue_sample_types
@@ -481,7 +478,7 @@ fields:
     enum: null
     required: false
   status:
-    description: 'The status of a Dataset. Allowable values listed here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: The status of a Dataset.
     entity_types:
     - dataset
     enum: dataset_status_types

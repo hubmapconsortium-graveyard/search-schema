@@ -18,8 +18,30 @@ properties:
   creation_action:
     description: The action that created this this Entity
   data_types:
-    description: 'TODO: An array of data/assay types contained in the Dataset.  Allowable
-      values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: 'TODO: An array of data/assay types contained in the Dataset.'
+    enum:
+    - AF
+    - ATACseq-bulk
+    - CODEX
+    - IMC
+    - LC-MS-untargeted
+    - MALDI-IMS-neg
+    - MALDI-IMS-pos
+    - MxIF
+    - PAS
+    - SNAREseq
+    - TMT-LC-MS
+    - Targeted-Shotgun-LC-MS
+    - WGS
+    - bulk-RNA
+    - codex_cytokit
+    - salmon_rnaseq_10x
+    - scRNA-Seq-10x
+    - sciATACseq
+    - sciRNAseq
+    - seqFish
+    - snATACseq
+    - snRNAseq
   descendant_ids:
     description: TODO
   descendants:
@@ -172,8 +194,7 @@ properties:
           with data uploads and/or extraction from data or metadata files provided
           in the data upload.
       organ:
-        description: 'The organ type when specimen_type == organ.  Allowable values
-          here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+        description: The organ type when specimen_type == organ.
         enum:
         - BL
         - BR
@@ -236,8 +257,7 @@ properties:
           the organ that the tissue was sourced from.  Specified in JSON, as outputed
           from the RUI tool.
       specimen_type:
-        description: 'For Sample entities, the type of tissue specimen.  Allowable
-          values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+        description: For Sample entities, the type of tissue specimen.
         enum:
         - atacseq
         - biopsy
@@ -352,8 +372,7 @@ properties:
             with data uploads and/or extraction from data or metadata files provided
             in the data upload.
         organ:
-          description: 'The organ type when specimen_type == organ.  Allowable values
-            here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+          description: The organ type when specimen_type == organ.
           enum:
           - BL
           - BR
@@ -417,8 +436,7 @@ properties:
             the organ that the tissue was sourced from.  Specified in JSON, as outputed
             from the RUI tool.
         specimen_type:
-          description: 'For Sample entities, the type of tissue specimen.  Allowable
-            values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+          description: For Sample entities, the type of tissue specimen.
           enum:
           - atacseq
           - biopsy
@@ -487,7 +505,7 @@ properties:
       type: object
     type: array
   status:
-    description: 'The status of a Dataset. Allowable values listed here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: The status of a Dataset.
     enum:
     - DEPRECATED
     - ERROR

@@ -121,8 +121,7 @@ properties:
       be transformed from the HIVE specified .tsv file provided with data uploads
       and/or extraction from data or metadata files provided in the data upload.
   organ:
-    description: 'The organ type when specimen_type == organ.  Allowable values here:
-      https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: The organ type when specimen_type == organ.
     enum:
     - BL
     - BR
@@ -211,8 +210,7 @@ properties:
           with data uploads and/or extraction from data or metadata files provided
           in the data upload.
       organ:
-        description: 'The organ type when specimen_type == organ.  Allowable values
-          here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+        description: The organ type when specimen_type == organ.
         enum:
         - BL
         - BR
@@ -275,8 +273,7 @@ properties:
           the organ that the tissue was sourced from.  Specified in JSON, as outputed
           from the RUI tool.
       specimen_type:
-        description: 'For Sample entities, the type of tissue specimen.  Allowable
-          values here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+        description: For Sample entities, the type of tissue specimen.
         enum:
         - atacseq
         - biopsy
@@ -359,8 +356,7 @@ properties:
       organ that the tissue was sourced from.  Specified in JSON, as outputed from
       the RUI tool.
   specimen_type:
-    description: 'For Sample entities, the type of tissue specimen.  Allowable values
-      here: https://docs.google.com/spreadsheets/d/1L8mfs767Z5ZGnZ92UJySlHxprraSariH1dU45g6jphE/edit'
+    description: For Sample entities, the type of tissue specimen.
     enum:
     - atacseq
     - biopsy
