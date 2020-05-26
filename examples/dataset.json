@@ -85,7 +85,7 @@
   "create_timestamp": 1584312481755,
   "created_by_user_displayname": "Dana L Jackson",
   "created_by_user_email": "danaj77@washington.edu",
-  "data_types": "['dt_scatacdeq']",
+  "data_types": "snATACseq",
   "descendant_ids": [],
   "descendants": [],
   "description": "Left ventricle ATAC-seq data\n8 sequences",
