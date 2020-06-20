@@ -25,6 +25,7 @@ properties:
     - CODEX
     - IMC
     - LC-MS-untargeted
+    - Lightsheet
     - MALDI-IMS-neg
     - MALDI-IMS-pos
     - MxIF
