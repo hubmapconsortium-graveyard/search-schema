@@ -10,6 +10,8 @@ enums:
       description: Imaging Mass Cytometry
     LC-MS-untargeted:
       description: Untargeted LC-MS
+    Lightsheet:
+      description: Lightsheet Microscopy
     MALDI-IMS-neg:
       description: MALDI IMS neg
     MALDI-IMS-pos:
