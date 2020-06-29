@@ -17,7 +17,7 @@ enums:
     MALDI-IMS-pos:
       description: MALDI IMS pos
     MxIF:
-      description: Multiplexex Immunofluorescence Microscopy
+      description: Multiplexed Immunofluorescence Microscopy
     PAS:
       description: PAS Stained Microscopy
     SNAREseq:
