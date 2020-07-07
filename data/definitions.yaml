@@ -32,6 +32,8 @@ enums:
       description: Bulk RNAseq
     codex_cytokit:
       description: derived data from CODEX through Cytokit
+    image_pyramid:
+      description: Image Pyramid
     salmon_rnaseq_10x:
       description: derived data from 10x data processed through Salmon
     scRNA-Seq-10x:
