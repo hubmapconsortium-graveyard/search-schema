@@ -36,6 +36,7 @@ properties:
     - WGS
     - bulk-RNA
     - codex_cytokit
+    - image_pyramid
     - salmon_rnaseq_10x
     - scRNA-Seq-10x
     - sciATACseq
