@@ -22,3 +22,4 @@ snRNAseq	snRNAseq
 codex_cytokit	derived data from CODEX through Cytokit
 salmon_rnaseq_10x	derived data from 10x data processed through Salmon
 Lightsheet	Lightsheet Microscopy
+image_pyramid	Image Pyramid
