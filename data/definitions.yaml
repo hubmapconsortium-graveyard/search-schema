@@ -3,7 +3,7 @@ enums:
     AF:
       description: Autofluorescence Microscopy
     ATACseq-bulk:
-      description: ATACseq (Bulk)
+      description: Bulk ATACseq
     CODEX:
       description: CODEX
     IMC:
@@ -13,11 +13,11 @@ enums:
     Lightsheet:
       description: Lightsheet Microscopy
     MALDI-IMS-neg:
-      description: MALDI IMS neg
+      description: MALDI IMS negative
     MALDI-IMS-pos:
-      description: MALDI IMS pos
+      description: MALDI IMS positive
     MxIF:
-      description: Multiplexed Immunofluorescence Microscopy
+      description: Multiplexed IF Microscopy
     PAS:
       description: PAS Stained Microscopy
     SNAREseq:
@@ -31,11 +31,11 @@ enums:
     bulk-RNA:
       description: Bulk RNAseq
     codex_cytokit:
-      description: derived data from CODEX through Cytokit
+      description: CODEX [Cytokit + SPRM]
     image_pyramid:
       description: Image Pyramid
     salmon_rnaseq_10x:
-      description: derived data from 10x data processed through Salmon
+      description: scRNA-Seq [10xGenomics + Salmon]
     scRNA-Seq-10x:
       description: scRNA-Seq (10xGenomics)
     sciATACseq:
