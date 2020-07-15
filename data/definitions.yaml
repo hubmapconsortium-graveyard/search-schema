@@ -3,7 +3,7 @@ enums:
     AF:
       description: Autofluorescence Microscopy
     ATACseq-bulk:
-      description: ATACseq (Bulk)
+      description: Bulk ATAC-seq
     CODEX:
       description: CODEX
     IMC:
@@ -13,15 +13,15 @@ enums:
     Lightsheet:
       description: Lightsheet Microscopy
     MALDI-IMS-neg:
-      description: MALDI IMS neg
+      description: MALDI IMS negative
     MALDI-IMS-pos:
-      description: MALDI IMS pos
+      description: MALDI IMS positive
     MxIF:
-      description: Multiplexed Immunofluorescence Microscopy
+      description: Multiplexed IF Microscopy
     PAS:
       description: PAS Stained Microscopy
     SNAREseq:
-      description: SNAREseq
+      description: SNARE-seq
     TMT-LC-MS:
       description: TMT LC-MS
     Targeted-Shotgun-LC-MS:
@@ -29,25 +29,25 @@ enums:
     WGS:
       description: Whole Genome Sequencing
     bulk-RNA:
-      description: Bulk RNAseq
+      description: Bulk RNA-seq
     codex_cytokit:
-      description: derived data from CODEX through Cytokit
+      description: CODEX [Cytokit + SPRM]
     image_pyramid:
       description: Image Pyramid
     salmon_rnaseq_10x:
-      description: derived data from 10x data processed through Salmon
+      description: scRNA-seq (10x Genomics) [Salmon]
     scRNA-Seq-10x:
-      description: scRNA-Seq (10xGenomics)
+      description: scRNA-seq (10x Genomics)
     sciATACseq:
-      description: sciATACseq
+      description: sciATAC-seq
     sciRNAseq:
-      description: sciRNAseq
+      description: sciRNA-seq
     seqFish:
       description: seqFish
     snATACseq:
-      description: snATACseq
+      description: snATAC-seq
     snRNAseq:
-      description: snRNAseq
+      description: snRNA-seq
   dataset_status_types:
     DEPRECATED:
       description: deprecated
