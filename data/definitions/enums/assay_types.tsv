@@ -18,7 +18,7 @@ sciATACseq	sciATACseq
 sciRNAseq	sciRNAseq
 seqFish	seqFish
 snATACseq	snATAC-seq
-snRNAseq	snRNAseq
+snRNAseq	snRNA-seq
 codex_cytokit	CODEX [Cytokit + SPRM]
 salmon_rnaseq_10x	scRNA-Seq [10xGenomics + Salmon]
 Lightsheet	Lightsheet Microscopy
