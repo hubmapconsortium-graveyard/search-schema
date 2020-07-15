@@ -20,6 +20,6 @@ seqFish	seqFish
 snATACseq	snATAC-seq
 snRNAseq	snRNA-seq
 codex_cytokit	CODEX [Cytokit + SPRM]
-salmon_rnaseq_10x	scRNA-Seq [10xGenomics + Salmon]
+salmon_rnaseq_10x	scRNA-seq (10x Genomics) [Salmon]
 Lightsheet	Lightsheet Microscopy
 image_pyramid	Image Pyramid
