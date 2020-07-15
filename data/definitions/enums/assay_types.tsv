@@ -7,7 +7,7 @@ IMC	Imaging Mass Cytometry
 MALDI-IMS-neg	MALDI IMS negative
 MALDI-IMS-pos	MALDI IMS positive
 PAS	PAS Stained Microscopy
-bulk-RNA	Bulk RNAseq
+bulk-RNA	Bulk RNA-seq
 SNAREseq	SNAREseq
 TMT-LC-MS	TMT LC-MS
 Targeted-Shotgun-LC-MS	Targeted Shotgun / Flow-injection LC-MS
