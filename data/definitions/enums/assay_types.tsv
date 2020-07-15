@@ -13,9 +13,9 @@ TMT-LC-MS	TMT LC-MS
 Targeted-Shotgun-LC-MS	Targeted Shotgun / Flow-injection LC-MS
 LC-MS-untargeted	Untargeted LC-MS
 WGS	Whole Genome Sequencing
-scRNA-Seq-10x	scRNA-Seq (10xGenomics)
-sciATACseq	sciATACseq
-sciRNAseq	sciRNAseq
+scRNA-Seq-10x	scRNA-seq (10x Genomics)
+sciATACseq	sciATAC-seq
+sciRNAseq	sciRNA-seq
 seqFish	seqFish
 snATACseq	snATAC-seq
 snRNAseq	snRNA-seq
