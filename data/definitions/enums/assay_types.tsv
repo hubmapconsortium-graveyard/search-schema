@@ -17,7 +17,7 @@ scRNA-Seq-10x	scRNA-Seq (10xGenomics)
 sciATACseq	sciATACseq
 sciRNAseq	sciRNAseq
 seqFish	seqFish
-snATACseq	snATACseq
+snATACseq	snATAC-seq
 snRNAseq	snRNAseq
 codex_cytokit	CODEX [Cytokit + SPRM]
 salmon_rnaseq_10x	scRNA-Seq [10xGenomics + Salmon]
