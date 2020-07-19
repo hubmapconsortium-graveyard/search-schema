@@ -17,9 +17,11 @@ scRNA-Seq-10x	scRNA-seq (10x Genomics)
 sciATACseq	sciATAC-seq
 sciRNAseq	sciRNA-seq
 seqFish	seqFish
+seqFish_lab_processed	processed seqFISH data [processed at source lab]
 snATACseq	snATAC-seq
 snRNAseq	snRNA-seq
 codex_cytokit	CODEX [Cytokit + SPRM]
 salmon_rnaseq_10x	scRNA-seq (10x Genomics) [Salmon]
 Lightsheet	Lightsheet Microscopy
 image_pyramid	Image Pyramid
+
