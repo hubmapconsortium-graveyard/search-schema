@@ -17,12 +17,6 @@
       "group_uuid": "def5fd76-ed43-11e8-b56a-0e8017bdda58",
       "hubmap_display_id": "STAN0003-SI-1",
       "last_modified_timestamp": 1572559158389,
-      "portal_uploaded_protocol_files": [
-        {
-          "protocol_file": "/hive/hubmap/lz/tissue-reg-data/def5fd76-ed43-11e8-b56a-0e8017bdda58/89f5fe6590b5dbbd7f2e99c1038f02f5/hubmap_protocol_tissue_collection.pdf",
-          "protocol_url": ""
-        }
-      ],
       "specimen_type": "organ_piece",
       "uuid": "bf1db74f40506e87055eda7b84a79174"
     },
@@ -46,12 +40,6 @@
         }
       ],
       "portal_uploaded_image_files": [],
-      "portal_uploaded_protocol_files": [
-        {
-          "protocol_file": "/hive/hubmap/lz/tissue-reg-data/def5fd76-ed43-11e8-b56a-0e8017bdda58/617ba59425d7c2b0e14224263cdd5fb8/hubmap_protocol_tissue_collection.pdf",
-          "protocol_url": ""
-        }
-      ],
       "specimen_type": "organ",
       "uuid": "eed96170f42554db84d97d1652bb23ef"
     },
@@ -132,21 +120,9 @@
       }
     ],
     "portal_uploaded_image_files": [],
-    "portal_uploaded_protocol_files": [
-      {
-        "protocol_file": "/hive/hubmap/lz/tissue-reg-data/def5fd76-ed43-11e8-b56a-0e8017bdda58/617ba59425d7c2b0e14224263cdd5fb8/hubmap_protocol_tissue_collection.pdf",
-        "protocol_url": ""
-      }
-    ],
     "specimen_type": "organ",
     "uuid": "eed96170f42554db84d97d1652bb23ef"
   },
-  "portal_uploaded_protocol_files": [
-    {
-      "protocol_file": "/hive/hubmap/lz/tissue-reg-data/def5fd76-ed43-11e8-b56a-0e8017bdda58/3402e7835fdf466fb47d99cb04c882c9/hubmap_protocol_tissue_collection.pdf",
-      "protocol_url": ""
-    }
-  ],
   "specimen_type": "flash_frozen_liquid_nitrogen",
   "uuid": "2b5b0b33efe54dfe6c4de631f7be13a2"
 }

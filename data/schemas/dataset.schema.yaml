@@ -42,6 +42,7 @@ properties:
     - sciATACseq
     - sciRNAseq
     - seqFish
+    - seqFish_lab_processed
     - snATACseq
     - snRNAseq
   descendant_ids:
@@ -107,9 +108,6 @@ properties:
       portal_uploaded_image_files:
         description: An array of information about image files uploaded during donor
           or tissue registration via the Tissue Registration UI
-      portal_uploaded_protocol_files:
-        description: An array of information about files uploaded through the Donor/Tissue
-          Registration UI donor selection criteria or tissue procurement protocols.
       protocol_url:
         description: The url to the protocols.io instance describing donor selection
           criteria, tissue procurement protocols and or data generation/derivation
@@ -247,9 +245,6 @@ properties:
       portal_uploaded_image_files:
         description: An array of information about image files uploaded during donor
           or tissue registration via the Tissue Registration UI
-      portal_uploaded_protocol_files:
-        description: An array of information about files uploaded through the Donor/Tissue
-          Registration UI donor selection criteria or tissue procurement protocols.
       protocol_url:
         description: The url to the protocols.io instance describing donor selection
           criteria, tissue procurement protocols and or data generation/derivation
@@ -426,9 +421,6 @@ properties:
         portal_uploaded_image_files:
           description: An array of information about image files uploaded during donor
             or tissue registration via the Tissue Registration UI
-        portal_uploaded_protocol_files:
-          description: An array of information about files uploaded through the Donor/Tissue
-            Registration UI donor selection criteria or tissue procurement protocols.
         protocol_url:
           description: The url to the protocols.io instance describing donor selection
             criteria, tissue procurement protocols and or data generation/derivation

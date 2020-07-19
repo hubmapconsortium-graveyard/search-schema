@@ -44,6 +44,8 @@ enums:
       description: sciRNA-seq
     seqFish:
       description: seqFish
+    seqFish_lab_processed:
+      description: processed seqFISH data [processed at source lab]
     snATACseq:
       description: snATAC-seq
     snRNAseq:
@@ -437,14 +439,6 @@ fields:
     - sample
     enum: null
     required: false
-  portal_uploaded_protocol_files:
-    description: An array of information about files uploaded through the Donor/Tissue
-      Registration UI donor selection criteria or tissue procurement protocols.
-    entity_types:
-    - donor
-    - sample
-    enum: null
-    required: Just one of these two
   protocol_url:
     description: The url to the protocols.io instance describing donor selection criteria,
       tissue procurement protocols and or data generation/derivation details.
