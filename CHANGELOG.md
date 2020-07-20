@@ -3,6 +3,7 @@
 ## v0.0.3 - In progress
 - Add Pyramid type.
 - Clean up assay names.
+- Add new assay_type and remove portal_uploaded_protocol_files.
 
 ## v0.0.2 - 2020-06-29
 - Add lightsheet.

@@ -20,7 +20,6 @@ Metadata.organ	organ	No	Sample	organ_types	The organ type when specimen_type == 
 Metadata.organ_other	organ_other	No	Sample		If organ type == other, the organ name is specified in this field
 Metadata.phi	contains_human_genetic_sequences	Yes	Dataset		true if the data contains human gene sequence information, false otherwise
 Metadata.protocol	protocol_url	Just one of these two	Donor, Sample		The url to the protocols.io instance describing donor selection criteria, tissue procurement protocols and or data generation/derivation details.
-Metadata.protocols	portal_uploaded_protocol_files	Just one of these two	Donor, Sample		An array of information about files uploaded through the Donor/Tissue Registration UI donor selection criteria or tissue procurement protocols.
 Metadata.provenance_group_name	group_name	Yes	Donor, Sample, Dataset		The name of the lab/TMC/TTD/RTI where the Entity was registered.
 Metadata.provenance_group_uuid	group_uuid	Yes	Donor, Sample, Dataset		A UUID associated with the lab/TMC/TTD/RTI where the Entity was registered.
 Metadata.provenance_modified_timestamp	last_modified_timestamp	Yes	Donor, Sample, Dataset		The date/time when the entity was last updatedl
