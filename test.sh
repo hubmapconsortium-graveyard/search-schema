@@ -19,7 +19,7 @@ end doctests
 start tsv-to-yaml
   REAL_YAML=data/definitions.yaml
   TEST_YAML=data/definitions.yaml.test
-  CMD="src/definitions-tsv-to-yaml.py --definitions data/definitions"
+  CMD="src/consolidate-yaml.py --definitions data/definitions"
 
   WHOLE_CMD="$CMD > $TEST_YAML"
   echo "Running '$WHOLE_CMD'"

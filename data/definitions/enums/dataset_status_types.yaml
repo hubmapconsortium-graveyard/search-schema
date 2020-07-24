@@ -1,0 +1,22 @@
+DEPRECATED:
+  description: deprecated
+ERROR:
+  description: error
+HOLD:
+  description: hold
+INVALID:
+  description: invalid
+LOCKED:
+  description: locked
+NEW:
+  description: new
+PROCESSING:
+  description: processing
+PUBLISHED:
+  description: published
+QA:
+  description: qa
+REOPENED:
+  description: reopened
+UNPUBLISHED:
+  description: unpublished
