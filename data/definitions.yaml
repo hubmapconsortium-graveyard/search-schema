@@ -4,10 +4,18 @@ enums:
       description: Autofluorescence Microscopy
     ATACseq-bulk:
       description: Bulk ATAC-seq
+    BB_Data:
+      description: BB_Data
     CODEX:
       description: CODEX
     IMC:
       description: Imaging Mass Cytometry
+    IMS_NegMode:
+      description: IMS_NegMode
+    IMS_PosMode:
+      description: IMS_PosMode
+    LC:
+      description: LC
     LC-MS-untargeted:
       description: Untargeted LC-MS
     Lightsheet:
@@ -22,6 +30,8 @@ enums:
       description: PAS Stained Microscopy
     SNAREseq:
       description: SNARE-seq
+    SNAREseq2:
+      description: SNAREseq2
     TMT-LC-MS:
       description: TMT LC-MS
     Targeted-Shotgun-LC-MS:
@@ -30,18 +40,54 @@ enums:
       description: Whole Genome Sequencing
     bulk-RNA:
       description: Bulk RNA-seq
+    codex:
+      description: codex
     codex_cytokit:
       description: CODEX [Cytokit + SPRM]
+    cytokit:
+      description: cytokit
+    dataset:
+      description: dataset
+    devtest:
+      description: devtest
+    dt_10x:
+      description: dt_10x
+    dt_codex:
+      description: dt_codex
+    dt_lightsheet:
+      description: dt_lightsheet
+    dt_metabolomics:
+      description: dt_metabolomics
+    dt_other:
+      description: dt_other
+    dt_scatacdeq:
+      description: dt_scatacdeq
+    dt_sciex:
+      description: dt_sciex
+    dt_tmtlcms:
+      description: dt_tmtlcms
     image_pyramid:
-      description: Image Pyramid
+      description: image_pyramid
     salmon_rnaseq_10x:
       description: scRNA-seq (10x Genomics) [Salmon]
+    salmon_rnaseq_bulk:
+      description: salmon_rnaseq_bulk
+    salmon_rnaseq_sciseq:
+      description: salmon_rnaseq_sciseq
+    salmon_rnaseq_snareseq:
+      description: salmon_rnaseq_snareseq
     scRNA-Seq-10x:
       description: scRNA-seq (10x Genomics)
+    sc_atac_seq_snare:
+      description: sc_atac_seq_snare
     sciATACseq:
       description: sciATAC-seq
     sciRNAseq:
       description: sciRNA-seq
+    seqFISH:
+      description: seqFISH
+    seqFISH_lab_processed:
+      description: seqFISH_lab_processed
     seqFish:
       description: seqFish
     seqFish_lab_processed:

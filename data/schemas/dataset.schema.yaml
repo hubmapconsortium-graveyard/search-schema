@@ -22,8 +22,12 @@ properties:
     enum:
     - AF
     - ATACseq-bulk
+    - BB_Data
     - CODEX
     - IMC
+    - IMS_NegMode
+    - IMS_PosMode
+    - LC
     - LC-MS-untargeted
     - Lightsheet
     - MALDI-IMS-neg
@@ -31,16 +35,35 @@ properties:
     - MxIF
     - PAS
     - SNAREseq
+    - SNAREseq2
     - TMT-LC-MS
     - Targeted-Shotgun-LC-MS
     - WGS
     - bulk-RNA
+    - codex
     - codex_cytokit
+    - cytokit
+    - dataset
+    - devtest
+    - dt_10x
+    - dt_codex
+    - dt_lightsheet
+    - dt_metabolomics
+    - dt_other
+    - dt_scatacdeq
+    - dt_sciex
+    - dt_tmtlcms
     - image_pyramid
     - salmon_rnaseq_10x
+    - salmon_rnaseq_bulk
+    - salmon_rnaseq_sciseq
+    - salmon_rnaseq_snareseq
     - scRNA-Seq-10x
+    - sc_atac_seq_snare
     - sciATACseq
     - sciRNAseq
+    - seqFISH
+    - seqFISH_lab_processed
     - seqFish
     - seqFish_lab_processed
     - snATACseq
