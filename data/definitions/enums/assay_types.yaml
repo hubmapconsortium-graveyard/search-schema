@@ -48,3 +48,51 @@ snATACseq:
     description: snATAC-seq
 snRNAseq:
     description: snRNA-seq
+BB_Data:
+    description: BB_Data
+IMS_NegMode:
+    description: IMS_NegMode
+IMS_PosMode:
+    description: IMS_PosMode
+LC:
+    description: LC
+SNAREseq2:
+    description: SNAREseq2
+codex:
+    description: codex
+cytokit:
+    description: cytokit
+dataset:
+    description: dataset
+devtest:
+    description: devtest
+dt_10x:
+    description: dt_10x
+dt_codex:
+    description: dt_codex
+dt_lightsheet:
+    description: dt_lightsheet
+dt_metabolomics:
+    description: dt_metabolomics
+dt_other:
+    description: dt_other
+dt_scatacdeq:
+    description: dt_scatacdeq
+dt_sciex:
+    description: dt_sciex
+dt_tmtlcms:
+    description: dt_tmtlcms
+image_pyramid:
+    description: image_pyramid
+salmon_rnaseq_bulk:
+    description: salmon_rnaseq_bulk
+salmon_rnaseq_sciseq:
+    description: salmon_rnaseq_sciseq
+salmon_rnaseq_snareseq:
+    description: salmon_rnaseq_snareseq
+sc_atac_seq_snare:
+    description: sc_atac_seq_snare
+seqFISH:
+    description: seqFISH
+seqFISH_lab_processed:
+    description: seqFISH_lab_processed
