@@ -5,6 +5,7 @@
   "create_timestamp": 1575489460833,
   "created_by_user_displayname": "Jamie Allen",
   "created_by_user_email": "allenj2@vanderbilt.edu",
+  "data_access_level": "public",
   "descendant_ids": [
     "6243227b1acf7664c2bfe6704f516d66",
     "4af6065981fca5067016bb97126d9216"
@@ -14,6 +15,7 @@
       "create_timestamp": 1575489509656,
       "created_by_user_displayname": "Jamie Allen",
       "created_by_user_email": "allenj2@vanderbilt.edu",
+      "data_access_level": "public",
       "description": "Age 61, white female.",
       "display_doi": "HBM332.PPZB.566",
       "entity_type": "Sample",
@@ -43,6 +45,7 @@
       "create_timestamp": 1577393366430,
       "created_by_user_displayname": "Jamie Allen",
       "created_by_user_email": "allenj2@vanderbilt.edu",
+      "data_access_level": "public",
       "display_doi": "HBM354.LLDZ.429",
       "entity_type": "Sample",
       "group_name": "Vanderbilt TMC",
