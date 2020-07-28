@@ -6,6 +6,7 @@
 - Add new assay_type and remove portal_uploaded_protocol_files.
 - Use YAML rather than TSV as the base format.
 - Status descriptions.
+- Add data_access_level.
 
 ## v0.0.2 - 2020-06-29
 - Add lightsheet.

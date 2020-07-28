@@ -50,6 +50,15 @@ enums:
       description: snATAC-seq
     snRNAseq:
       description: snRNA-seq
+  data_access_levels:
+    consortium:
+      description: This data or metadata is available only to consortium members who
+        are in the HuBMAP-Read access group.
+    protected:
+      description: This data may contain human genetic sequence information and requires
+        special permission to access.
+    public:
+      description: This data or metadata is available to the public.
   dataset_status_types:
     Error:
       description: Data was submitted, but an error occurred during automated checks
@@ -285,6 +294,14 @@ fields:
     - dataset
     enum: null
     required: false
+  data_access_level:
+    description: The access control level for the entity
+    entity_types:
+    - donor
+    - sample
+    - dataset
+    enum: data_access_levels
+    required: true
   data_types:
     description: 'TODO: An array of data/assay types contained in the Dataset.'
     entity_types:

@@ -37,6 +37,14 @@ creation_action:
   - dataset
   enum: null
   required: false
+data_access_level:
+  description: The access control level for the entity
+  entity_types:
+  - donor
+  - sample
+  - dataset
+  enum: data_access_levels
+  required: true  
 data_types:
   description: 'TODO: An array of data/assay types contained in the Dataset.'
   entity_types:
