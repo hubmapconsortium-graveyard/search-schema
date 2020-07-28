@@ -501,17 +501,14 @@ properties:
   status:
     description: The status of a Dataset.
     enum:
-    - DEPRECATED
-    - ERROR
-    - HOLD
-    - INVALID
-    - LOCKED
-    - NEW
-    - PROCESSING
-    - PUBLISHED
+    - Error
+    - Hold
+    - Invalid
+    - New
+    - Processing
+    - Published
     - QA
-    - REOPENED
-    - UNPUBLISHED
+    - Withdrawn
   uuid:
     description: The HuBMAP auto-generated UUID for the Entity
 required:
