@@ -17,6 +17,12 @@ properties:
     description: The email address of the person who registerd/created the Entity.
   creation_action:
     description: The action that created this this Entity
+  data_access_level:
+    description: The access control level for the entity
+    enum:
+    - consortium
+    - protected
+    - public
   data_types:
     description: 'TODO: An array of data/assay types contained in the Dataset.'
     enum:
@@ -66,6 +72,12 @@ properties:
         description: The email address of the person who registerd/created the Entity.
       creation_action:
         description: The action that created this this Entity
+      data_access_level:
+        description: The access control level for the entity
+        enum:
+        - consortium
+        - protected
+        - public
       description:
         description: A description of the Entity, hand entered into the UI
       display_doi:
@@ -118,6 +130,7 @@ properties:
     - create_timestamp
     - created_by_user_displayname
     - created_by_user_email
+    - data_access_level
     - entity_type
     - group_name
     - group_uuid
@@ -157,6 +170,12 @@ properties:
         description: The email address of the person who registerd/created the Entity.
       creation_action:
         description: The action that created this this Entity
+      data_access_level:
+        description: The access control level for the entity
+        enum:
+        - consortium
+        - protected
+        - public
       description:
         description: A description of the Entity, hand entered into the UI
       display_doi:
@@ -313,6 +332,7 @@ properties:
     - create_timestamp
     - created_by_user_displayname
     - created_by_user_email
+    - data_access_level
     - entity_type
     - group_name
     - group_uuid
@@ -332,6 +352,12 @@ properties:
           description: The email address of the person who registerd/created the Entity.
         creation_action:
           description: The action that created this this Entity
+        data_access_level:
+          description: The access control level for the entity
+          enum:
+          - consortium
+          - protected
+          - public
         description:
           description: A description of the Entity, hand entered into the UI
         display_doi:
@@ -490,6 +516,7 @@ properties:
       - create_timestamp
       - created_by_user_displayname
       - created_by_user_email
+      - data_access_level
       - entity_type
       - group_name
       - group_uuid
@@ -519,6 +546,7 @@ required:
 - create_timestamp
 - created_by_user_displayname
 - created_by_user_email
+- data_access_level
 - entity_type
 - group_name
 - group_uuid
