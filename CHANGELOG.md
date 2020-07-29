@@ -7,6 +7,7 @@
 - Use YAML rather than TSV as the base format.
 - Status descriptions.
 - Add data_access_level.
+- Update 'seqFISH [Lab Processed]'.
 
 ## v0.0.2 - 2020-06-29
 - Add lightsheet.
