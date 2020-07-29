@@ -43,7 +43,7 @@ sciRNAseq:
 seqFish:
     description: seqFish
 seqFish_lab_processed:
-    description: processed seqFISH data [processed at source lab]
+    description: seqFISH [Lab Processed]
 snATACseq:
     description: snATAC-seq
 snRNAseq:
