@@ -36,14 +36,22 @@ enums:
       description: Image Pyramid
     salmon_rnaseq_10x:
       description: scRNA-seq (10x Genomics) [Salmon]
+    salmon_rnaseq_bulk:
+      description: Bulk RNA-seq [Salmon]
+    salmon_rnaseq_sciseq:
+      description: sciRNA-seq [Salmon]
+    salmon_rnaseq_snareseq:
+      description: scRNA-seq (SNARE-seq) [Salmon]
     scRNA-Seq-10x:
       description: scRNA-seq (10x Genomics)
+    sc_atac_seq_snare:
+      description: scATAC-seq (SNARE-seq) [SnapATAC]
     sciATACseq:
       description: sciATAC-seq
     sciRNAseq:
       description: sciRNA-seq
     seqFish:
-      description: seqFish
+      description: seqFISH
     seqFish_lab_processed:
       description: seqFISH [Lab Processed]
     snATACseq:
