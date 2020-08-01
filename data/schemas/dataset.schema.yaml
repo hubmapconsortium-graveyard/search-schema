@@ -44,7 +44,11 @@ properties:
     - codex_cytokit
     - image_pyramid
     - salmon_rnaseq_10x
+    - salmon_rnaseq_bulk
+    - salmon_rnaseq_sciseq
+    - salmon_rnaseq_snareseq
     - scRNA-Seq-10x
+    - sc_atac_seq_snare
     - sciATACseq
     - sciRNAseq
     - seqFish
