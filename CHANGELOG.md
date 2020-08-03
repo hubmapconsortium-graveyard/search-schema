@@ -9,6 +9,7 @@
 - Add data_access_level.
 - Update 'seqFISH [Lab Processed]'.
 - Add assay-type codes seen on production.
+- Remove definitions.yaml.
 
 ## v0.0.2 - 2020-06-29
 - Add lightsheet.
