@@ -16,24 +16,13 @@ start doctests
   find src | grep '\.py$' | xargs python -m doctest
 end doctests
 
-start tsv-to-yaml
-  REAL_YAML=data/definitions.yaml
-  TEST_YAML=data/definitions.yaml.test
-  CMD="src/consolidate-yaml.py --definitions data/definitions"
-
-  WHOLE_CMD="$CMD > $TEST_YAML"
-  echo "Running '$WHOLE_CMD'"
-  eval $WHOLE_CMD
-
-  diff --ignore-blank-lines $REAL_YAML $TEST_YAML \
-    || die "To refresh: $CMD > $REAL_YAML"
-  rm $TEST_YAML
-end tsv-to-yaml
-
 start yaml-to-schema
+  YAML=data/.definitions.yaml
+  src/consolidate-yaml.py --definitions data/definitions > $YAML
+
   REAL_SCHEMAS=data/schemas/
   TEST_SCHEMAS=data/schemas.test/
-  CMD="src/definitions-yaml-to-schema.py --definitions $REAL_YAML --schemas"
+  CMD="src/definitions-yaml-to-schema.py --definitions $YAML --schemas"
 
   WHOLE_CMD="$CMD $TEST_SCHEMAS"
   echo "Running '$WHOLE_CMD'"
