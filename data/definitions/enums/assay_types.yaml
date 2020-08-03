@@ -48,9 +48,9 @@ sciATACseq:
     description: sciATAC-seq
 sciRNAseq:
     description: sciRNA-seq
-seqFish:
+seqFISH:
     description: seqFISH
-seqFish_lab_processed:
+seqFISH_lab_processed:
     description: seqFISH [Lab Processed]
 snATACseq:
     description: snATAC-seq
