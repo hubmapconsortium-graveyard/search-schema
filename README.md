@@ -1,3 +1,7 @@
+## 💥 *Deprecated and archived* 💥
+
+As of 2020-08-10, this code was integrated into [`search-api`](https://github.com/hubmapconsortium/search-api/pull/136).
+
 # search-schema
 JSON Schemas for documents from the [HuBMAP Search API](https://github.com/hubmapconsortium/search-api/):
 The [HuBMAP Portal](https://github.com/hubmapconsortium/portal-ui) depends on there being a consistent document structure.
